@@ -7,14 +7,13 @@
 
 #img-div {
     align-items: center;
-    background-color: #f4f4f4;
 }
 
 #img{
+    margin-top: 20px;
     max-height: 200px;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
-    margin: 5px;
 }
 
 #img-caption {
@@ -25,7 +24,7 @@
 }
 
 #main {
-    background-color: rgb(210, 245, 245);
+    background-color: rgb(187, 189, 189);
     margin: 10px auto;
     font-family: sans-serif;
     font-weight: 300;
@@ -37,6 +36,7 @@
 
 #tribute-info {
     margin: 0;
+    margin-left: 20px;
     width: 90%;
     padding: 10px;
     list-style-position: inside;
@@ -50,20 +50,10 @@ body, h1, h2, h3, p {
 
 /* Set the body background color and font */
 body {
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
-    color: #8a8989;
+    color: #545252;
     line-height: 1.6;
     padding: 20px;
-}
-
-/* Style the main container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the header */
