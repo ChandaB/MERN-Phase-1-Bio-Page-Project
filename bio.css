@@ -1,25 +1,43 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
 }
 
-/* Set the body background color and font */
-body {
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
-    color: #8a8989;
-    line-height: 1.6;
-    padding: 20px;
+/* unvisited link */
+a:link {
+    color: blue;
 }
 
-/* Style the main container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: green;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/* Responsive image styling based on device*/
+div.profile-image {
+    max-width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 25px auto 25px auto; /* Center the div horizontally and add bottom margin */
+}
+
+/* Center the profile image container */
+div.profile-image-container {
+    text-align: center;
+    padding: 10px 20px;
+    margin: auto;
 }
 
 /* Style the header */
@@ -33,31 +51,29 @@ header h1 {
     color: #333;
 }
 
-/* Style the bio section */
-.bio {
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller font size for mobile devices */
+    }
+}
+
+/* Set the body background color and font */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #6b2a2a;
+    line-height: 1.6;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
 }
 
-.bio img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+.bio, .projects {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
-}
-
-.bio h2 {
-    font-size: 2em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-.bio p {
-    font-size: 1.2em;
-    color: #666;
-    text-align: center;
-    max-width: 600px;
 }
 
 /* Style the footer */
