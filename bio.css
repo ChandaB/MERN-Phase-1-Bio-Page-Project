@@ -18,7 +18,6 @@ a:visited {
 /* mouse over link */
 a:hover {
     color: green;
-    text-decoration: underline;
 }
 
 /* selected link */
@@ -39,6 +38,10 @@ div.profile-image-container {
     text-align: center;
     padding: 10px 20px;
     margin: auto;
+}
+
+div.profile-image-container:hover {
+    text-decoration: green wavy underline;
 }
 
 /* Style the header */
