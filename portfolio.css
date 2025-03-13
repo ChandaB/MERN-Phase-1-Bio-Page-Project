@@ -1,0 +1,295 @@
+/* Default browser reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation bar styling to create flex container and set background to blue */
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    background: deepskyblue;
+}
+
+/* Navigation links styling to make font white */
+.navigation a {
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+/* Remove list styles from navigation so bullet points don't show */
+.navigation ul,
+ol {
+    list-style: none;
+}
+
+/* Hover effect for navigation links change to dark blue on hover*/
+.navigation a:hover {
+    background: #06547d;
+}
+
+/* Responsive navigation for screens <= 800px */
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+/* Responsive navigation for screens <= 600px */
+@media all and (max-width: 600px) {
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+/* General styling for html and body to set the font to arial */
+html,
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Image styling to give photo a shadow effect */
+div.profile-image {
+    max-width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 25px auto 25px auto;
+    /* Center the div horizontally and add bottom margin */
+}
+
+/* Profile image styling to round profile photo */
+div.profile-image img {
+    border-radius: 75%;
+}
+
+/* Center the profile image container */
+div.profile-image-container {
+    text-align: center;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+/* Content section styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 85%;
+}
+
+/* Side navigation styling */
+#side-navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 15%;
+    background: rgb(153, 0, 255);
+}
+
+/* Remove list styles from side navigation so bullet points don't show */
+#side-navigation ul,
+ol {
+    list-style: none;
+}
+
+/* Remove bottom border from last side navigation link */
+#side-navigation li:last-of-type a {
+    border-bottom: none;
+}
+
+/* Side navigation links styling to set font link to white */
+#side-navigation a {
+    display: block;
+    padding: 1em;
+    color: white;
+}
+
+/* Hover effect for side navigation links to change to light purple */
+#side-navigation a:hover {
+    background: #dcadf9;
+}
+
+/* Intro text styling */
+#intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* About section styling */
+#about {
+    margin: 20px 0;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+}
+
+/* Skills section styling is a flex container that holds a container for the header
+and another for the skills list */
+#skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 800px;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+/* Skills section h1 styling */
+#skills h1 {
+    display: flex;
+    padding: 0;
+}
+
+/* Skills list styling to display in a vertical wrap next to the h1 text */
+#skills ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+/* Responsive styling for skills ul */
+@media all and (max-width: 600px) {
+    #skills ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+/* Projects section styling */
+#projects {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    display: flex;
+    align-items: stretch;
+}
+
+/* Projects section header styling */
+#projects h1 {
+    display: flex;
+    padding: 0;
+}
+
+/* Cards container styling holds the card, card-header, and card-content */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding-left: 20px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    align-items: stretch;
+}
+
+/* Individual card styling */
+.card {
+    width: 40%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    overflow: hidden; /* Add this line to prevent overflow */
+}
+
+.card-image {
+    width: 100%; 
+    padding-top: 10px; 
+    padding: 10px;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* Card header styling */
+.card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #90f, #00bfff);
+    color: #fff;
+}
+
+/* Card content styling */
+.card-content {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Button inside card content styling */
+.card-content .button {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #90f, deepskyblue);
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 10px 5px;
+    transition: 0.3s;
+}
+
+/* Hover effect for button inside card content */
+.card-content .button:hover {
+    transform: scale(1.1);
+}
+
+/* Style the footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #999;
+}
