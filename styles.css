@@ -42,6 +42,10 @@
     list-style-position: inside;
 }
 
+#tribute-info ul {
+    list-style: square inside;
+}
+
 /* Reset some default browser styles */
 body, h1, h2, h3, p {
     margin: 0;
@@ -83,4 +87,9 @@ footer {
     margin-top: 40px;
     font-size: 0.9em;
     color: #999;
+}
+
+ul,
+ol {
+    list-style: none;
 }
